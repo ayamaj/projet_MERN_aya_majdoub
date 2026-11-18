@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.light {
+  background: #f4f6f9;
+  color: #222;
+}
+
+.dark {
+  background: #172033;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #ffffff;
+  color: #222;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.nav-brand h2 {
+  margin: 0;
+}
+
+.badge-mern {
+  background: #1687c9;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: #1687c9;
+  color: white;
+}
+
+.cart-badge {
+  font-weight: bold;
+}
+
+.badge-count {
+  color: #1687c9;
+  margin-left: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.product-card,
+.cart-card {
+  background: white;
+  color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.product-card h4 {
+  min-height: 40px;
+}
+
+.product-card span {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #1687c9;
+}
+
+.product-card button {
+  width: 100%;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-row span {
+  font-size: 13px;
+}
+
+.cart-row button {
+  padding: 6px 10px;
+  margin: 0 5px;
+}
+
+@media (max-width: 750px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo-area {
+  margin-top: 20px;
+}
+
+.promo-area input {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.notification-toast {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #16a05a;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
